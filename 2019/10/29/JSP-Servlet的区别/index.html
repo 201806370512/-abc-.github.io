@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>JSP/Servlet的区别 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JSP/Servlet 一     相同点 1.都可以处理后台逻辑，作为mvc控制； 2.都有9大内置对象（requset,response,session,application） 3.都可用Java语音  二    不同点1.JSP可以用于前端和后台，sevlet只能用与后端2.JSP一般用于小型项目，sevlet常用于框架大型的项目3.JSP内嵌有html，EL,JSTL和Java内容，se">
+  <meta name="description" content="JSP/Servlet一    相同点 都可以处理后台逻辑，作为mvc控制； 都有9大内置对象（requset,response,session,application） 都可用Java语音  二    不同点 JSP可以用于前端和后台，sevlet只能用与后端 JSP一般用于小型项目，sevlet常用于框架大型的项目 JSP内嵌有html，EL,JSTL和Java内容，servlet内用于Jav">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JSP&#x2F;Servlet的区别">
 <meta property="og:url" content="http://yoursite.com/2019/10/29/JSP-Servlet的区别/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="JSP/Servlet 一     相同点 1.都可以处理后台逻辑，作为mvc控制； 2.都有9大内置对象（requset,response,session,application） 3.都可用Java语音  二    不同点1.JSP可以用于前端和后台，sevlet只能用与后端2.JSP一般用于小型项目，sevlet常用于框架大型的项目3.JSP内嵌有html，EL,JSTL和Java内容，se">
+<meta property="og:description" content="JSP/Servlet一    相同点 都可以处理后台逻辑，作为mvc控制； 都有9大内置对象（requset,response,session,application） 都可用Java语音  二    不同点 JSP可以用于前端和后台，sevlet只能用与后端 JSP一般用于小型项目，sevlet常用于框架大型的项目 JSP内嵌有html，EL,JSTL和Java内容，servlet内用于Jav">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-10-29T00:47:36.842Z">
+<meta property="og:updated_time" content="2019-11-03T13:10:58.776Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSP&#x2F;Servlet的区别">
-<meta name="twitter:description" content="JSP/Servlet 一     相同点 1.都可以处理后台逻辑，作为mvc控制； 2.都有9大内置对象（requset,response,session,application） 3.都可用Java语音  二    不同点1.JSP可以用于前端和后台，sevlet只能用与后端2.JSP一般用于小型项目，sevlet常用于框架大型的项目3.JSP内嵌有html，EL,JSTL和Java内容，se">
+<meta name="twitter:description" content="JSP/Servlet一    相同点 都可以处理后台逻辑，作为mvc控制； 都有9大内置对象（requset,response,session,application） 都可用Java语音  二    不同点 JSP可以用于前端和后台，sevlet只能用与后端 JSP一般用于小型项目，sevlet常用于框架大型的项目 JSP内嵌有html，EL,JSTL和Java内容，servlet内用于Jav">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -174,13 +174,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1>JSP/Servlet</h1>
-一     相同点
-1.都可以处理后台逻辑，作为mvc控制；
-2.都有9大内置对象（requset,response,session,application）
-3.都可用Java语音
-
-<p>二    不同点<br>1.JSP可以用于前端和后台，sevlet只能用与后端<br>2.JSP一般用于小型项目，sevlet常用于框架大型的项目<br>3.JSP内嵌有html，EL,JSTL和Java内容，servlet内用于Java内容编写<br>4.JSP控制不需要项目中去注册，而Servlet必须注册（web.xml/注解）</p>
+        <h3 id="JSP-Servlet"><a href="#JSP-Servlet" class="headerlink" title="JSP/Servlet"></a>JSP/Servlet</h3><h2 id="一-相同点"><a href="#一-相同点" class="headerlink" title="一    相同点"></a>一    相同点</h2><ul>
+<li>都可以处理后台逻辑，作为mvc控制；</li>
+<li>都有9大内置对象（requset,response,session,application）</li>
+<li>都可用Java语音</li>
+</ul>
+<h2 id="二-不同点"><a href="#二-不同点" class="headerlink" title="二    不同点"></a>二    不同点</h2><ul>
+<li>JSP可以用于前端和后台，sevlet只能用与后端</li>
+<li>JSP一般用于小型项目，sevlet常用于框架大型的项目</li>
+<li>JSP内嵌有html，EL,JSTL和Java内容，servlet内用于Java内容编写</li>
+<li>JSP控制不需要项目中去注册，而Servlet必须注册（web.xml/注解）</li>
+</ul>
 <p>作用域<br>四个作用域：request域  session域  application域  page域</p>
 <p>application：<br>全局作用范围，整个应用程序共享，就是在部署文件中的同一个webApp共享，生命周期为：应用程序启动到停止。</p>
 <p>session：<br>会话作用域，当用户首次访问时，产生一个新的会话，以后服务器就可以记住这个会话状态。生命周期：会话超时，或者服务器端强制使会话失效。</p>
