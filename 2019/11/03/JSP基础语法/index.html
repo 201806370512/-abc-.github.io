@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>JSP基础语法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="JSP基础语法  jsp注释                     jsp脚本     //将Java代码用的方式表达出来  jsp声明                  （         Java代码可以是变量，也可以是方法">
+  <meta name="description" content="JSP基础语法  jsp注释        &amp;lt;%–我是JSP注释，在客户端不可见–%&amp;gt;    &amp;lt;%    //单行注释    /*    多行注释    */    %&amp;gt; jsp脚本    //将Java代码用&amp;lt;% **** %&amp;gt;的方式表达出来 jsp声明     &amp;lt;%! Java代码%&amp;gt;        （        Java代码可以是变量，也可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JSP基础语法">
 <meta property="og:url" content="http://yoursite.com/2019/11/03/JSP基础语法/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="JSP基础语法  jsp注释                     jsp脚本     //将Java代码用的方式表达出来  jsp声明                  （         Java代码可以是变量，也可以是方法">
+<meta property="og:description" content="JSP基础语法  jsp注释        &amp;lt;%–我是JSP注释，在客户端不可见–%&amp;gt;    &amp;lt;%    //单行注释    /*    多行注释    */    %&amp;gt; jsp脚本    //将Java代码用&amp;lt;% **** %&amp;gt;的方式表达出来 jsp声明     &amp;lt;%! Java代码%&amp;gt;        （        Java代码可以是变量，也可">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-03T12:34:13.850Z">
+<meta property="og:updated_time" content="2019-11-03T12:54:03.193Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSP基础语法">
-<meta name="twitter:description" content="JSP基础语法  jsp注释                     jsp脚本     //将Java代码用的方式表达出来  jsp声明                  （         Java代码可以是变量，也可以是方法">
+<meta name="twitter:description" content="JSP基础语法  jsp注释        &amp;lt;%–我是JSP注释，在客户端不可见–%&amp;gt;    &amp;lt;%    //单行注释    /*    多行注释    */    %&amp;gt; jsp脚本    //将Java代码用&amp;lt;% **** %&amp;gt;的方式表达出来 jsp声明     &amp;lt;%! Java代码%&amp;gt;        （        Java代码可以是变量，也可">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -176,34 +176,12 @@
       
         <h1>JSP基础语法</h1>
 
-<h1>jsp注释<h3>    
-    <!--我是HEML注释，在客户端可见-->
-    <%--我是jsp注释，在客户端不可见--%>
-    <% 单行注释 * 多行注释 %>
+<p>jsp注释<br>    <!--我是HEML注释，在客户端可见--><br>    &lt;%–我是JSP注释，在客户端不可见–%&gt;<br>    &lt;%<br>    //单行注释<br>    /*<br>    多行注释<br>    */<br>    %&gt;</p>
+<p>jsp脚本<br>    //将Java代码用&lt;% **** %&gt;的方式表达出来</p>
+<p>jsp声明<br>     &lt;%! Java代码%&gt;<br>        （<br>        Java代码可以是变量，也可以是方法<br>            &lt;%!<br>                string a = “张三”；<br>                string add(int b , int c){<br>                return b+c;<br>            }<br>            %&gt;<br>        ）</p>
+<p>jsp表达式：<br>    &lt;% =表达式 %&gt;    //：表达式不以分号结束（表达//xx：<a>）</a></p>
+<p>JSP九大内置对象<br>（常用）    1.out<br>    2.request<br>    3.response<br>    4.session<br>    5.application<br>(不常用)    6.page<br>    7.pageContext<br>    8.exception<br>    9.config    </p>
 
-<h3>jsp脚本<h3>
-    //将Java代码用<% **** %>的方式表达出来
-
-<h3>jsp声明<h3>
-     <%! java代码%>   
-        （
-        Java代码可以是变量，也可以是方法
-            <%! string a="张三" ； add(int b , int c){ <pre><code>        return b+c;
-    }
-    %&gt;
-）</code><h3>jsp表达式：<h3>
-    <% =表达式 %>    //：表达式不以分号结束（表达//xx：<a>）
-
-<h3>JSP九大内置对象<h3>
-（常用）    1.out
-    2.request
-    3.response
-    4.session
-    5.application
-(不常用)    6.page
-    7.pageContext
-    8.exception
-    9.config    </h3></h3></a></%></h3></h3></%!></%!></h3></h3></%></h3></h3></%></%--我是jsp注释，在客户端不可见--%></h3></h1>
       
 
       
